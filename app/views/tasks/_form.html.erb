@@ -1,0 +1,16 @@
+
+<%= form_with model: task do |f| %>
+  <div class="field">
+    <%= f.label :title %> <br />
+    <%= f.text_field :title %> <br />
+  </div>
+  <div class="field">
+    <%= f.label :details %> <br />
+    <%= f.text_field :details %> <br />
+  </div>
+  <div class="field">
+    <%= f.label :completed %> <br />
+    <%= f.check_box :send_text %> <br />
+  </div>
+  <%= f.submit "Submit", class: "button small radius" %>
+<% end %>
